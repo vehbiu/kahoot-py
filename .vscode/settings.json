@@ -1,0 +1,4 @@
+{
+    "explorer.excludeGitIgnore": true,
+    "python.analysis.autoImportCompletions": true
+}

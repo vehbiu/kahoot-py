@@ -1,0 +1,28 @@
+[build-system]
+requires      = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "kahoot"
+version = "1.0.3"
+description = "A Python package for interacting with the (private) Kahoot! Player API"
+readme = "README.md"
+authors = [{ name = "Vehbi", email = "me@vehbi.me" }]
+license = { file = "../LICENSE" }
+classifiers = [
+    "Intended Audience :: Developers",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+]
+keywords = ["kahoot", "api", "player"]
+requires-python = ">=3.9"
+dynamic = ["dependencies"]
+
+[project.urls]
+Homepage = "https://github.com/vehbiu/kahoot-py"
+
+[tool.setuptools]
+packages = ["kahoot"]
+
+[tool.setuptools.dynamic]
+dependencies = { file = ["requirements.txt"] }
