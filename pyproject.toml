@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "kahoot"
-version = "1.0.3"
+version = "1.0.8"
 description = "A Python package for interacting with the (private) Kahoot! Player API"
 readme = "README.md"
 authors = [{ name = "Vehbi", email = "me@vehbi.me" }]
@@ -22,7 +22,7 @@ dynamic = ["dependencies"]
 Homepage = "https://github.com/vehbiu/kahoot-py"
 
 [tool.setuptools]
-packages = ["kahoot"]
+packages = ["kahoot", "kahoot.packets", "kahoot.packets.impl", "kahoot.packets.server", "kahoot.util"]
 
 [tool.setuptools.dynamic]
 dependencies = { file = ["requirements.txt"] }

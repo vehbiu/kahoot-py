@@ -1,5 +1,4 @@
-from kahoot.packets import Packet
-
+from .. import Packet
 
 class RespondPacket(Packet):
     id: int

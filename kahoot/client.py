@@ -4,7 +4,7 @@ import json
 import httpx
 import aiocometd_noloop as aiocometd
 
-from kahootpy.packets.server import ServerPacket
+from .packets.server import ServerPacket
 from typing import Tuple, Dict
 
 from .packets import Packet
