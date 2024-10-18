@@ -32,7 +32,7 @@ from kahoot import KahootClient
 async def main():
     client = KahootClient()
     # add handlers before joining the game
-    client.on('question_start', lambda question: print(f"qsPacket: {question}"))
+    client.on('question_start', lambda question: print(f"question started (ready to answer): {question}"))
     await client.join_game(game_pin=123456, username='your_username')
 
 # Run the main function
