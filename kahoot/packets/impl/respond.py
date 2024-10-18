@@ -9,6 +9,10 @@ class RespondPacket(Packet):
             id=None,
             type="message",
             gameid=gameid,
-            content={"type": "quiz", "choice": choice, "questionIndex": question_index},
+            content={
+                "type": "quiz", 
+                "choice": choice, 
+                "questionIndex": question_index
+            },
         )
         self.id = 45
