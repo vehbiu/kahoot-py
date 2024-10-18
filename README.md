@@ -24,6 +24,7 @@ KahootPy is a Python client for interacting with the Kahoot API, allowing you to
 
 ## 🛠️ Example Usage
 Here's a basic example of how to use the KahootClient:
+**Info**: Check [client_example.py](https://github.com/vehbiu/kahoot-py/blob/main/client_example.py) for an example that correctly utilizes the API
 
 ```python
 import asyncio
