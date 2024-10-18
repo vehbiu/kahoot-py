@@ -17,7 +17,8 @@ async def game_over(packet: GameOverPacket):
 
 async def question_start(packet: QuestionStartPacket):
     print(f"Question started: {packet}")
-    await client.send_packet(RespondPacket(client.game_pin, 1, 1))
+    question_number: int = packet.game_block_index
+    await client.send_packet(RespondPacket(client.game_pin, 1, question_number))
 
 async def question_end(packet: QuestionEndPacket):
     print(f"Question ended: {packet}")
