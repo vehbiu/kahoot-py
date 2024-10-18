@@ -1,3 +1,4 @@
+> **Disclaimer**: This project is not officially affiliated with Kahoot in any way. It is an open-source project created for educational purposes only. Use at your own risk. I bear no responsibility for any misuse of this tool.
 # kahoot-py
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![Open Source](https://img.shields.io/badge/Open_Source-green?style=for-the-badge&logo=opensource&logoColor=white)
