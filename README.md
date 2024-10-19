@@ -30,12 +30,15 @@ Here's a basic example of how to use the KahootClient:
 ```python
 import asyncio
 from kahoot import KahootClient
+from kahoot.packets.server.question_start import QuestionStartPacket
+
+async def question_start(packet: QuestionStartPacket):
+    print(f"Question started: {packet}")
 
 async def main():
     client = KahootClient()
-    # add handlers before joining the game
-    client.on('question_start', lambda question: print(f"question started (ready to answer): {question}"))
-    await client.join_game(game_pin=123456, username='your_username')
+    client.on("question_start", question_start)
+    await client.join_game(game_pin=3850352, username='your_username')
 
 # Run the main function
 asyncio.run(main())
